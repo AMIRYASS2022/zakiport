@@ -1,0 +1,2289 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mezquita Alhuda - Playa Blanca, Lanzarote</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕌</text></svg>">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center; /* Añadido para centrar todo el texto */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            background-image: url('https://raw.githubusercontent.com/yassinedevs/masjjjjid-alhuda-playa-blanca/main/mezquita.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #006633 0%, #228B22 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 2rem; /* Aumentado de 1.5rem a 2rem */
+            font-weight: 800; /* Aumentado de 700 a 800 para hacerlo más negrita */
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: #e8f1f5;
+        }
+
+        .language-toggle {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+
+        .language-toggle:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 102, 51, 0.4), rgba(34, 139, 34, 0.4)), url('images/image mezquita alhuda.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 80px;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+            background: rgba(0, 102, 51, 0.8);
+            border-radius: 15px;
+            padding: 3rem 2rem;
+            -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            background: #32CD32;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: #228B22;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(50, 205, 50, 0.4);
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .section h2 {
+            color: #006633;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .about-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .about-card i {
+            font-size: 3rem;
+            color: #006633;
+            margin-bottom: 1rem;
+        }
+
+        /* Prayer Times */
+        .prayer-times {
+            background: linear-gradient(135deg, #006633, #228B22);
+            color: white;
+            border-radius: 15px;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .prayer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .prayer-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+        }
+
+        .prayer-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .prayer-item .time {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #e8f1f5;
+        }
+
+        /* Prayer Calendar */
+        .prayer-calendar {
+            margin-top: 3rem;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .prayer-calendar h3 {
+            color: #006633;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .calendar-container {
+            overflow-x: auto;
+        }
+        
+        .prayer-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+        }
+        
+        .prayer-table th, .prayer-table td {
+            padding: 0.75rem;
+            text-align: center;
+            border: 1px solid #dee2e6;
+        }
+        
+        .prayer-table th {
+            background-color: #006633;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .prayer-table tr:nth-child(even) {
+            background-color: rgba(0, 102, 51, 0.05);
+        }
+        
+        .prayer-table tr:hover {
+            background-color: rgba(0, 102, 51, 0.1);
+        }
+        
+        .calendar-note {
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+            font-style: italic;
+            margin-top: 1rem;
+        }
+
+
+
+        /* Donations Section - Mejorada */
+        .donations {
+            background: linear-gradient(135deg, #003d1a 0%, #004d20 100%); /* Verde muy oscuro */
+            color: #FFD700; /* Dorado para el texto */
+            text-align: center;
+            border: 2px solid #FFD700; /* Borde dorado */
+            box-shadow: 0 8px 25px rgba(0, 61, 26, 0.4);
+        }
+
+        .donations h2 {
+            color: #FFD700; /* Título en dorado */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .donations p {
+            color: white; /* Texto descriptivo en blanco */
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .quran-verse {
+            background: rgba(255, 215, 0, 0.15); /* Fondo dorado translúcido */
+            border: 1px solid #FFD700;
+            padding: 2.5rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            font-style: italic;
+            font-size: 1.3rem;
+            line-height: 2;
+            color: white; /* Texto del Corán en blanco */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .bank-info {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); /* Fondo dorado */
+            color: #003d1a; /* Texto verde oscuro */
+            padding: 2.5rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            border: 2px solid #003d1a;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .bank-info h3 {
+            color: #003d1a; /* Verde oscuro para títulos */
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .bank-info p {
+            color: #003d1a; /* Verde oscuro para texto */
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .iban {
+            font-family: 'Courier New', monospace;
+            font-size: 1.4rem;
+            font-weight: 800;
+            background: #003d1a; /* Fondo verde oscuro */
+            color: #FFD700; /* Texto dorado */
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            letter-spacing: 3px;
+            border: 2px solid #FFD700;
+            text-align: center;
+            box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* Objectives */
+        .objectives-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .objective-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #006633;
+        }
+
+        .objective-item i {
+            font-size: 2rem;
+            color: #006633;
+        }
+
+        /* Contact */
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contact-card i {
+            font-size: 2.5rem;
+            color: #006633;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #006633;
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            padding: 0.8rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-links a:hover {
+            background: #32CD32;
+            transform: translateY(-2px);
+        }
+
+        /* Prayer Calendar */
+        .prayer-calendar {
+            margin-top: 3rem;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .prayer-calendar h3 {
+            color: #1a5f3f;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .calendar-container {
+            overflow-x: auto;
+        }
+        
+        .prayer-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+        }
+        
+        .prayer-table th, .prayer-table td {
+            padding: 0.75rem;
+            text-align: center;
+            border: 1px solid #dee2e6;
+        }
+        
+        .prayer-table th {
+            background-color: #1a5f3f;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .prayer-table tr:nth-child(even) {
+            background-color: rgba(26, 95, 63, 0.05);
+        }
+        
+        .prayer-table tr:hover {
+            background-color: rgba(26, 95, 63, 0.1);
+        }
+        
+        .calendar-note {
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+            font-style: italic;
+            margin-top: 1rem;
+        }
+        
+        /* Mobile Responsive - Mejorado */
+        @media (max-width: 768px) {
+            /* Header móvil mejorado */
+            .header {
+                padding: 0.8rem 0;
+            }
+            
+            .nav-container {
+                padding: 0 1rem;
+                flex-wrap: wrap;
+            }
+            
+            .logo {
+                font-size: 1.6rem;
+            }
+            
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: linear-gradient(135deg, #006633 0%, #228B22 100%);
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            }
+            
+            .nav-menu.active {
+                display: flex;
+            }
+            
+            .nav-menu li {
+                margin: 0.5rem 0;
+            }
+            
+            .nav-menu a {
+                padding: 0.8rem;
+                display: block;
+                border-radius: 5px;
+                transition: background 0.3s ease;
+            }
+            
+            .nav-menu a:hover {
+                background: rgba(255,255,255,0.1);
+            }
+            
+            /* Botón hamburguesa */
+            .mobile-menu-toggle {
+                display: block;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 1.5rem;
+                cursor: pointer;
+                padding: 0.5rem;
+            }
+            
+            .language-toggle {
+                font-size: 0.9rem;
+                padding: 0.4rem 0.8rem;
+            }
+
+            /* Hero móvil mejorado */
+            .hero {
+                height: 85vh;
+                background-attachment: scroll;
+                padding: 1rem;
+                margin-top: 80px;
+            }
+            
+            .hero-content {
+                padding: 1.5rem 1rem;
+                max-width: 100%;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: 1.5rem;
+            }
+            
+            .hero img {
+                max-width: 300px !important;
+                margin-bottom: 15px !important;
+            }
+            
+            .cta-button {
+                font-size: 1rem;
+                padding: 0.8rem 1.5rem;
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            /* Contenido principal móvil */
+            .main-content {
+                padding: 1.5rem 1rem;
+            }
+            
+            .section {
+                padding: 1.5rem 1rem;
+                margin-bottom: 2rem;
+            }
+            
+            .section h2 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            
+            .section p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+
+            /* Grids móviles */
+            .about-grid,
+            .objectives-list,
+            .contact-info {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .about-card,
+            .objective-item,
+            .contact-card {
+                padding: 1.5rem;
+            }
+            
+            /* Horarios de oración móvil */
+            .prayer-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+            
+            .prayer-item {
+                padding: 1rem;
+            }
+            
+            /* Tabla de calendario móvil */
+            .prayer-table {
+                font-size: 0.85rem;
+            }
+            
+            .prayer-table th,
+            .prayer-table td {
+                padding: 0.5rem 0.3rem;
+            }
+            
+            /* Donaciones móvil */
+            .donations {
+                padding: 2rem 1rem;
+            }
+            
+            .quran-verse {
+                padding: 1.5rem;
+                font-size: 1.1rem;
+                margin: 1.5rem 0;
+            }
+            
+            .bank-info {
+                padding: 1.5rem;
+            }
+            
+            .iban {
+                font-size: 1.1rem;
+                padding: 1rem;
+                letter-spacing: 1px;
+                word-break: break-all;
+            }
+            
+            /* Footer móvil */
+            .footer {
+                padding: 2rem 1rem 1rem;
+            }
+            
+            .social-links {
+                gap: 0.8rem;
+            }
+            
+            .social-links a {
+                font-size: 1.3rem;
+                padding: 0.6rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Pantallas muy pequeñas */
+            .hero {
+                margin-top: 70px;
+            }
+            
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            
+            .hero p {
+                font-size: 0.95rem;
+            }
+            
+            .hero-content {
+                padding: 1rem 0.8rem;
+            }
+            
+            .hero img {
+                max-width: 250px !important;
+            }
+            
+            .section h2 {
+                font-size: 1.8rem;
+            }
+            
+            .prayer-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .prayer-table {
+                font-size: 0.8rem;
+            }
+            
+            .iban {
+                font-size: 1rem;
+                letter-spacing: 0.5px;
+            }
+        }
+        
+        /* Botón hamburguesa - oculto por defecto */
+        .mobile-menu-toggle {
+            display: none;
+        }
+        
+        /* Mobile menu styles for larger screens */
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: block;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 1.5rem;
+                cursor: pointer;
+                padding: 0.5rem;
+            }
+            
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: linear-gradient(135deg, #006633 0%, #228B22 100%);
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            }
+            
+            .nav-menu.active {
+                display: flex;
+            }
+        }
+
+        /* Arabic RTL Support */
+        [dir="rtl"] {
+            text-align: right;
+        }
+
+        [dir="rtl"] .nav-container {
+            flex-direction: row-reverse;
+        }
+
+        [dir="rtl"] .hero {
+            text-align: right;
+        }
+
+        /* Hidden sections for language switching */
+        .hidden {
+            display: none;
+        }
+
+
+
+        /* Map Styles */
+        .map-container {
+            margin-top: 2rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+        
+        @media (max-width: 768px) {
+            .map-container iframe {
+                height: 250px;
+            }
+        }
+
+        /* Countdown Styles */
+        .countdown-container {
+            background: linear-gradient(135deg, #2c5530, #1a3d1f);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .countdown-title {
+            color: #e8f1f5;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .next-prayer {
+            color: #ffd700;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .countdown-display {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .time-unit {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 1rem;
+            min-width: 80px;
+            backdrop-filter: blur(10px);
+        }
+
+        .time-number {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffd700;
+            line-height: 1;
+        }
+
+        .time-label {
+            display: block;
+            font-size: 0.9rem;
+            color: #e8f1f5;
+            margin-top: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .countdown-container {
+                padding: 1.5rem;
+                margin: 1rem 0;
+            }
+            
+            .countdown-title {
+                font-size: 1.3rem;
+            }
+            
+            .next-prayer {
+                font-size: 1.5rem;
+            }
+            
+            .time-unit {
+                min-width: 70px;
+                padding: 0.8rem;
+            }
+            
+            .time-number {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Arabic specific styles */
+        #arabic-content .nav-menu {
+            direction: rtl;
+        }
+        
+        #arabic-content .logo {
+            font-family: 'Amiri', serif;
+        }
+        
+        #arabic-content .footer-content h3,
+        #arabic-content .footer-content p {
+            direction: rtl;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-mosque"></i>
+                <span>MEZQUITA ALHUDA</span>
+            </div>
+            <nav>
+                    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="nav-menu">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#acerca">Sobre Nosotros</a></li>
+                        <li><a href="#objetivos">Objetivos</a></li>
+                        <li><a href="#horarios">Horarios</a></li>
+                        <li><a href="#calendario">Calendario</a></li>
+                        <li><a href="#transmision">Transmisión</a></li>
+                        <li><a href="#donar">Donar</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            <button class="language-toggle" onclick="toggleLanguage()">العربية</button>
+        </div>
+    </header>
+
+    <!-- Spanish Content -->
+    <div id="spanish-content">
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <h1>MEZQUITA ALHUDA</h1>
+                <p>Bienvenidos a la Mezquita Al-Huda en Playa Blanca. Un espacio sagrado para la oración, el aprendizaje y la unidad de nuestra comunidad musulmana.</p>
+                <a href="#donar" class="cta-button">Juntos cuidamos y mantenemos viva nuestra mezquita</a>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- About Section -->
+            <section class="section" id="acerca">
+                <h2>Sobre Nuestro Proyecto</h2>
+                <p>La Mezquita Alhuda es un centro islámico ubicado en Playa Blanca, Lanzarote, que sirve a la creciente comunidad musulmana de la isla. Nuestro centro ofrece un espacio de culto, aprendizaje y encuentro para todos los musulmanes y aquellos interesados en conocer el Islam.</p>
+                
+                <p>Nuestras instalaciones incluyen:</p>
+                
+                <div class="about-grid">
+                    <div class="about-card">
+                        <i class="fas fa-pray"></i>
+                        <h3>Sala de Oración</h3>
+                        <p>Sala de oración principal para las cinco oraciones diarias y el Yumu'ah</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-female"></i>
+                        <h3>Área para Mujeres</h3>
+                        <p>Área separada para mujeres con total privacidad y comodidad</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-book-quran"></i>
+                        <h3>Educación</h3>
+                        <p>Aulas para la enseñanza del Corán y el idioma árabe</p>
+                    </div>
+                </div>
+                
+                <p class="mt-4">Nuestra misión es fortalecer la fe, promover la educación islámica y fomentar la unidad entre los musulmanes de Lanzarote y las Islas Canarias. Trabajamos para crear un ambiente acogedor donde las familias puedan crecer espiritualmente y los jóvenes puedan aprender sobre su herencia islámica.</p>
+                
+                <p>Todos son bienvenidos a visitarnos y conocer más sobre el Islam y nuestra comunidad.</p>
+            </section>
+
+            <!-- Prayer Times -->
+            <section class="section" id="horarios">
+                <div class="prayer-times">
+                    <h2>Horarios de Oración</h2>
+                    <p>Horarios de oración para Playa Blanca, Lanzarote</p>
+                    <div class="prayer-grid">
+                        <div class="prayer-item">
+                            <h4>Fajr</h4>
+                            <div class="time">05:27</div>
+                        </div>
+                        <div class="prayer-item">
+                            <h4>Dhuhr</h4>
+                            <div class="time">13:59</div>
+                        </div>
+                        <div class="prayer-item">
+                            <h4>Asr</h4>
+                            <div class="time">17:32</div>
+                        </div>
+                        <div class="prayer-item">
+                            <h4>Maghrib</h4>
+                            <div class="time">21:00</div>
+                        </div>
+                        <div class="prayer-item">
+                            <h4>Isha</h4>
+                            <div class="time">22:25</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Countdown to Next Prayer -->
+                    <div class="countdown-container">
+                        <div class="countdown-title">Tiempo hasta la próxima oración</div>
+                        <div class="next-prayer" id="next-prayer-name-es">Cargando...</div>
+                        <div class="countdown-display" id="countdown-display-es">
+                            <div class="time-unit">
+                                <span class="time-number" id="hours-es">00</span>
+                                <span class="time-label">Horas</span>
+                            </div>
+                            <div class="time-unit">
+                                <span class="time-number" id="minutes-es">00</span>
+                                <span class="time-label">Minutos</span>
+                            </div>
+                            <div class="time-unit">
+                                <span class="time-number" id="seconds-es">00</span>
+                                <span class="time-label">Segundos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Calendar Section -->
+            <section class="section" id="calendario">
+                <h2>Calendario Mensual</h2>
+                <p>Manténgase informado sobre nuestros eventos, clases y actividades comunitarias. Nuestro calendario incluye:</p>
+                <div class="objectives-list">
+                    <div class="objective-item">
+                        <i class="fas fa-book"></i>
+                        <span>Clases de Corán para niños y adultos</span>
+                    </div>
+                    <div class="objective-item">
+                        <i class="fas fa-microphone"></i>
+                        <span>Conferencias islámicas semanales</span>
+                    </div>
+                    <div class="objective-item">
+                        <i class="fas fa-users"></i>
+                        <span>Eventos comunitarios y celebraciones</span>
+                    </div>
+                    <div class="objective-item">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <span>Actividades de recaudación de fondos</span>
+                    </div>
+                </div>
+                
+                <!-- Tabla de horarios de oración mensual -->
+                <div class="prayer-calendar">
+                    <h3>Horarios de Oración - Julio 2025</h3>
+                    <div class="calendar-container">
+                        <table class="prayer-table">
+                            <thead>
+                                <tr>
+                                    <th>Día</th>
+                                    <th>Fajr</th>
+                                    <th>Dhuhr</th>
+                                    <th>Asr</th>
+                                    <th>Maghrib</th>
+                                    <th>Isha</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>05:25</td>
+                                    <td>13:58</td>
+                                    <td>17:31</td>
+                                    <td>21:00</td>
+                                    <td>22:25</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>05:25</td>
+                                    <td>13:58</td>
+                                    <td>17:31</td>
+                                    <td>21:00</td>
+                                    <td>22:25</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>05:26</td>
+                                    <td>13:59</td>
+                                    <td>17:32</td>
+                                    <td>21:00</td>
+                                    <td>22:25</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>05:26</td>
+                                    <td>13:59</td>
+                                    <td>17:32</td>
+                                    <td>21:00</td>
+                                    <td>22:25</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>05:27</td>
+                                    <td>13:59</td>
+                                    <td>17:32</td>
+                                    <td>21:00</td>
+                                    <td>22:25</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>05:28</td>
+                                    <td>13:59</td>
+                                    <td>17:32</td>
+                                    <td>21:00</td>
+                                    <td>22:24</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>05:28</td>
+                                    <td>13:59</td>
+                                    <td>17:32</td>
+                                    <td>20:59</td>
+                                    <td>22:24</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>05:29</td>
+                                    <td>13:59</td>
+                                    <td>17:33</td>
+                                    <td>20:59</td>
+                                    <td>22:24</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>05:29</td>
+                                    <td>14:00</td>
+                                    <td>17:33</td>
+                                    <td>20:59</td>
+                                    <td>22:23</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>05:30</td>
+                                    <td>14:00</td>
+                                    <td>17:33</td>
+                                    <td>20:59</td>
+                                    <td>22:23</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>05:31</td>
+                                    <td>14:00</td>
+                                    <td>17:33</td>
+                                    <td>20:59</td>
+                                    <td>22:23</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>05:31</td>
+                                    <td>14:00</td>
+                                    <td>17:33</td>
+                                    <td>20:58</td>
+                                    <td>22:22</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>05:32</td>
+                                    <td>14:00</td>
+                                    <td>17:34</td>
+                                    <td>20:58</td>
+                                    <td>22:22</td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td>05:33</td>
+                                    <td>14:00</td>
+                                    <td>17:34</td>
+                                    <td>20:58</td>
+                                    <td>22:21</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>05:34</td>
+                                    <td>14:00</td>
+                                    <td>17:34</td>
+                                    <td>20:58</td>
+                                    <td>22:21</td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td>05:34</td>
+                                    <td>14:00</td>
+                                    <td>17:34</td>
+                                    <td>20:57</td>
+                                    <td>22:20</td>
+                                </tr>
+                                <tr>
+                                    <td>17</td>
+                                    <td>05:35</td>
+                                    <td>14:00</td>
+                                    <td>17:34</td>
+                                    <td>20:57</td>
+                                    <td>22:20</td>
+                                </tr>
+                                <tr>
+                                    <td>18</td>
+                                    <td>05:36</td>
+                                    <td>14:00</td>
+                                    <td>17:34</td>
+                                    <td>20:56</td>
+                                    <td>22:19</td>
+                                </tr>
+                                <tr>
+                                    <td>19</td>
+                                    <td>05:37</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:56</td>
+                                    <td>22:19</td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td>05:37</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:56</td>
+                                    <td>22:18</td>
+                                </tr>
+                                <tr>
+                                    <td>21</td>
+                                    <td>05:38</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:55</td>
+                                    <td>22:17</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td>05:39</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:55</td>
+                                    <td>22:16</td>
+                                </tr>
+                                <tr>
+                                    <td>23</td>
+                                    <td>05:40</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:54</td>
+                                    <td>22:16</td>
+                                </tr>
+                                <tr>
+                                    <td>24</td>
+                                    <td>05:40</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:54</td>
+                                    <td>22:15</td>
+                                </tr>
+                                <tr>
+                                    <td>25</td>
+                                    <td>05:41</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:53</td>
+                                    <td>22:14</td>
+                                </tr>
+                                <tr>
+                                    <td>26</td>
+                                    <td>05:42</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:52</td>
+                                    <td>22:13</td>
+                                </tr>
+                                <tr>
+                                    <td>27</td>
+                                    <td>05:43</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:52</td>
+                                    <td>22:13</td>
+                                </tr>
+                                <tr>
+                                    <td>28</td>
+                                    <td>05:44</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:51</td>
+                                    <td>22:12</td>
+                                </tr>
+                                <tr>
+                                    <td>29</td>
+                                    <td>05:45</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:51</td>
+                                    <td>22:11</td>
+                                </tr>
+                                <tr>
+                                    <td>30</td>
+                                    <td>05:45</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:50</td>
+                                    <td>22:10</td>
+                                </tr>
+                                <tr>
+                                    <td>31</td>
+                                    <td>05:46</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:49</td>
+                                    <td>22:09</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p class="calendar-note">* Los horarios pueden variar ligeramente. El calendario se actualiza mensualmente. Por favor, consulte nuestra página regularmente para obtener actualizaciones.</p>
+                    
+                    <div class="download-section" style="text-align: center; margin-top: 2rem;">
+                        <button class="cta-button" onclick="downloadPrayerSchedule('es')" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-download"></i>
+                            Descargar Horario Mensual
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Live Stream Section -->
+            <section class="section" id="transmision">
+                <h2>Transmisión en Vivo</h2>
+                <p>Únase a nosotros virtualmente para las oraciones y eventos especiales a través de nuestras transmisiones en vivo.</p>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fab fa-youtube"></i>
+                        <h3>YouTube</h3>
+                        <p><a href="https://www.youtube.com/@centroislamicoplayablanca" target="_blank" rel="noopener">Canal de YouTube</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-facebook"></i>
+                        <h3>Facebook</h3>
+                        <p><a href="https://www.facebook.com/share/1FjhqgVRez/" target="_blank" rel="noopener">Facebook Live</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Objectives -->
+            <section class="section" id="objetivos">
+                <h2>Objetivos de la Mezquita</h2>
+                <p>Construyamos juntos un legado para nuestras futuras generaciones</p>
+                <p>Tu generosidad nos ayuda a mantener y expandir nuestros servicios para la comunidad. Todas las donaciones son utilizadas para el mantenimiento de la mezquita, programas educativos y asistencia comunitaria.</p>
+                
+                <h3>Objetivos de la Mezquita</h3>
+                <div class="objectives-list">
+                    <div class="objective-item">
+                        <i class="fas fa-compass"></i>
+                        <span>🧭 Guiar espiritualmente a la comunidad: Ofrecer orientación religiosa continua mediante charlas, khutbas, y asistencia espiritual para fortalecer la fe y los principios islámicos en la vida diaria.</span>
+                    </div>
+                    <div class="objective-item">
+                        <i class="fas fa-child"></i>
+                        <span>🧒 Impulsar la educación islámica y cultural: Ofrecer clases de árabe, Corán y valores islámicos para niños, jóvenes y adultos.</span>
+                    </div>
+                    <div class="objective-item">
+                        <i class="fas fa-users"></i>
+                        <span>👨‍👩‍👧‍👦 Fortalecer los lazos comunitarios: Organizar actividades sociales, culturales y religiosas que fomenten la unión y el apoyo mutuo entre los miembros de la comunidad.</span>
+                    </div>
+                    <div class="objective-item">
+                        <i class="fas fa-user-friends"></i>
+                        <span>👩‍🦳 Atender las necesidades de todos los grupos: Desarrollar programas específicos para mujeres, personas mayores y familias, asegurando su integración activa y respetuosa.</span>
+                    </div>
+                    <div class="objective-item">
+                        <i class="fas fa-mosque"></i>
+                        <span>🕋 Mantener y mejorar las instalaciones: Garantizar un espacio limpio, seguro y accesible, con recursos adecuados para el rezo, la enseñanza y la convivencia.</span>
+                    </div>
+                    <div class="objective-item">
+                        <i class="fas fa-handshake"></i>
+                        <span>🤝 Fomentar el diálogo y la convivencia: Promover el respeto, la tolerancia y el entendimiento mutuo con el entorno social y cultural que nos rodea.</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Donations -->
+            <section class="section donations" id="donar">
+                <h2>Ayuda a construir nuestra mezquita</h2>
+                <p>Tu generosidad nos ayuda a mantener y expandir nuestros servicios a la comunidad. Todas las donaciones se utilizan para el mantenimiento de la mezquita, programas educativos y alcance comunitario.</p>
+                
+                <div class="quran-verse">
+                    <p>مَثَلُ الَّذِينَ يُنفِقُونَ أَمْوَالَهُمْ فِي سَبِيلِ اللَّهِ كَمَثَلِ حَبَّةٍ أَنبَتَتْ سَبْعَ سَنَابِلَ فِي كُلِّ سُنبُلَةٍ مِّائَةُ حَبَّةٍ</p>
+                    <p>"El ejemplo de quienes gastan su riqueza en el camino de Allah es como una semilla que crece siete espigas; en cada espiga hay cien granos. Y Allah multiplica [Su recompensa] para quien Él quiere." (Corán 2:261)</p>
+                </div>
+                
+                <div class="bank-info">
+                    <h3>كيف يمكنك المساعدة؟ 🤝</h3>
+                    <p>يمكنك المساهمة بتبرعك من خلال التحويل المصرفي:</p>
+                    <div class="iban">ES3321006992440200128409</div>
+                    <p>كل مساهمة، مهما كانت صغيرة، تقربنا أكثر من تحقيق هذا الهدف النبيل. جزاكم الله خيراً على كرمكم.</p>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section class="section" id="contacto">
+                <h2>Contacto</h2>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Ubicación</h3>
+                        <p>C. Alemania, 90<br>35580 Playa Blanca, Lanzarote</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Teléfono</h3>
+                        <p><a href="tel:+34627095609">627 095 609</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:masjidalhudaalhuda7@gmail.com">masjidalhudaalhuda7@gmail.com</a></p>
+                    </div>
+                </div>
+                
+                <!-- Mapa -->
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.8234567890123!2d-13.8234567!3d28.8567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDUxJzI0LjQiTiAxM8KwNDknMjQuNCJX!5e0!3m2!1ses!2ses!4v1234567890123!5m2!1ses!2ses&q=C.+Alemania+90,+35580+Playa+Blanca,+Lanzarote" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Ubicación de Mezquita Al-Huda">
+                    </iframe>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Arabic Content -->
+    <div id="arabic-content" class="hidden" dir="rtl">
+        <!-- Arabic Header -->
+        <header class="header">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-mosque"></i>
+                    <span>مسجد الهدى</span>
+                </div>
+                <nav>
+                    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="nav-menu">
+                        <li><a href="#inicio">الرئيسية</a></li>
+                        <li><a href="#acerca">حولنا</a></li>
+                        <li><a href="#objetivos">الأهداف</a></li>
+                        <li><a href="#horarios">أوقات الصلاة</a></li>
+                        <li><a href="#calendario">التقويم</a></li>
+                        <li><a href="#transmision">البث المباشر</a></li>
+                        <li><a href="#donar">تبرع</a></li>
+                        <li><a href="#contacto">اتصل بنا</a></li>
+                    </ul>
+                </nav>
+                <button class="language-toggle" onclick="toggleLanguage()">Español</button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>مسجد الهدى</h1>
+                <p>أهلاً وسهلاً بكم في مسجد الهدى في بلايا بلانكا. مساحة مقدسة للصلاة والتعلم ووحدة مجتمعنا المسلم.</p>
+                <a href="#donar" class="cta-button">معًا نعتني ونحافظ على مسجدنا</a>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- About Section -->
+            <section class="section">
+                <h2>حول مشروعنا</h2>
+                <p>مسجد الهدى هو مركز إسلامي يقع في بلايا بلانكا، لانزاروتي، يخدم المجتمع الإسلامي المتنامي في الجزيرة. يوفر مركزنا مساحة للعبادة والتعلم واللقاء لجميع المسلمين والمهتمين بالتعرف على الإسلام.</p>
+                
+                <p>تشمل مرافقنا:</p>
+                
+                <div class="about-grid">
+                    <div class="about-card">
+                        <i class="fas fa-pray"></i>
+                        <h3>قاعة الصلاة</h3>
+                        <p>قاعة صلاة رئيسية للصلوات الخمس اليومية وصلاة الجمعة</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-female"></i>
+                        <h3>منطقة للنساء</h3>
+                        <p>منطقة منفصلة للنساء مع خصوصية وراحة كاملة</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-book-quran"></i>
+                        <h3>التعليم</h3>
+                        <p>فصول لتعليم القرآن واللغة العربية</p>
+                    </div>
+                </div>
+                
+                <p class="mt-4">مهمتنا هي تعزيز الإيمان وتشجيع التعليم الإسلامي وتعزيز الوحدة بين المسلمين في لانزاروتي وجزر الكناري. نعمل على خلق بيئة مرحبة حيث يمكن للعائلات أن تنمو روحياً ويمكن للشباب أن يتعلموا عن تراثهم الإسلامي.</p>
+                
+                <p>الجميع مرحب بهم لزيارتنا ومعرفة المزيد عن الإسلام ومجتمعنا.</p>
+            </section>
+
+            <!-- Prayer Times -->
+            <section class="section" id="horarios">
+                <div class="prayer-times">
+                    <h2>أوقات الصلاة</h2>
+                    <p>أوقات الصلاة لبلايا بلانكا، لانزاروتي</p>
+                    <div class="prayer-grid">
+                        <div class="prayer-item">
+                            <h4>الفجر</h4>
+                            <div class="time">05:27</div>
+                        </div>
+                        <div class="prayer-item">
+                            <h4>الظهر</h4>
+                            <div class="time">13:59</div>
+                        </div>
+                        <div class="prayer-item">
+                            <h4>العصر</h4>
+                            <div class="time">17:32</div>
+                        </div>
+                        <div class="prayer-item">
+                            <h4>المغرب</h4>
+                            <div class="time">21:00</div>
+                        </div>
+                        <div class="prayer-item">
+                            <h4>العشاء</h4>
+                            <div class="time">22:25</div>
+                        </div>
+                    </div>
+                    
+                    <!-- العد التنازلي للصلاة التالية -->
+                    <div class="countdown-container">
+                        <div class="countdown-title">الوقت المتبقي للصلاة التالية</div>
+                        <div class="next-prayer" id="next-prayer-name-ar">جاري التحميل...</div>
+                        <div class="countdown-display" id="countdown-display-ar">
+                            <div class="time-unit">
+                                <span class="time-number" id="hours-ar">٠٠</span>
+                                <span class="time-label">ساعات</span>
+                            </div>
+                            <div class="time-unit">
+                                <span class="time-number" id="minutes-ar">٠٠</span>
+                                <span class="time-label">دقائق</span>
+                            </div>
+                            <div class="time-unit">
+                                <span class="time-number" id="seconds-ar">٠٠</span>
+                                <span class="time-label">ثواني</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Calendar Section -->
+            <section class="section">
+                <h2>التقويم الشهري</h2>
+                <p>ابقوا على اطلاع على فعالياتنا ودروسنا وأنشطتنا المجتمعية. يشمل تقويمنا:</p>
+                <div class="objectives-list">
+                    <div class="objective-item">
+                        <i class="fas fa-book"></i>
+                        <span>دروس القرآن للأطفال والكبار</span>
+                    </div>
+                    <div class="objective-item">
+                        <i class="fas fa-microphone"></i>
+                        <span>المحاضرات الإسلامية الأسبوعية</span>
+                    </div>
+                    <div class="objective-item">
+                        <i class="fas fa-users"></i>
+                        <span>الفعاليات المجتمعية والاحتفالات</span>
+                    </div>
+                    <div class="objective-item">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <span>أنشطة جمع التبرعات</span>
+                    </div>
+                </div>
+                
+                <!-- جدول أوقات الصلاة الشهري -->
+                <div class="prayer-calendar">
+                    <h3>أوقات الصلاة - يوليو 2025</h3>
+                    <div class="calendar-container">
+                        <table class="prayer-table">
+                            <thead>
+                                <tr>
+                                    <th>اليوم</th>
+                                    <th>الفجر</th>
+                                    <th>الظهر</th>
+                                    <th>العصر</th>
+                                    <th>المغرب</th>
+                                    <th>العشاء</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>١</td>
+                                    <td>05:25</td>
+                                    <td>13:58</td>
+                                    <td>17:31</td>
+                                    <td>21:00</td>
+                                    <td>22:25</td>
+                                </tr>
+                                <tr>
+                                    <td>٢</td>
+                                    <td>05:25</td>
+                                    <td>13:58</td>
+                                    <td>17:31</td>
+                                    <td>21:00</td>
+                                    <td>22:25</td>
+                                </tr>
+                                <tr>
+                                    <td>٣</td>
+                                    <td>05:26</td>
+                                    <td>13:59</td>
+                                    <td>17:32</td>
+                                    <td>21:00</td>
+                                    <td>22:25</td>
+                                </tr>
+                                <tr>
+                                    <td>٤</td>
+                                    <td>05:26</td>
+                                    <td>13:59</td>
+                                    <td>17:32</td>
+                                    <td>21:00</td>
+                                    <td>22:25</td>
+                                </tr>
+                                <tr>
+                                    <td>٥</td>
+                                    <td>05:27</td>
+                                    <td>13:59</td>
+                                    <td>17:32</td>
+                                    <td>21:00</td>
+                                    <td>22:25</td>
+                                </tr>
+                                <tr>
+                                    <td>٦</td>
+                                    <td>05:28</td>
+                                    <td>13:59</td>
+                                    <td>17:32</td>
+                                    <td>21:00</td>
+                                    <td>22:24</td>
+                                </tr>
+                                <tr>
+                                    <td>٧</td>
+                                    <td>05:28</td>
+                                    <td>13:59</td>
+                                    <td>17:32</td>
+                                    <td>20:59</td>
+                                    <td>22:24</td>
+                                </tr>
+                                <tr>
+                                    <td>٨</td>
+                                    <td>05:29</td>
+                                    <td>13:59</td>
+                                    <td>17:33</td>
+                                    <td>20:59</td>
+                                    <td>22:24</td>
+                                </tr>
+                                <tr>
+                                    <td>٩</td>
+                                    <td>05:29</td>
+                                    <td>14:00</td>
+                                    <td>17:33</td>
+                                    <td>20:59</td>
+                                    <td>22:23</td>
+                                </tr>
+                                <tr>
+                                    <td>١٠</td>
+                                    <td>05:30</td>
+                                    <td>14:00</td>
+                                    <td>17:33</td>
+                                    <td>20:59</td>
+                                    <td>22:23</td>
+                                </tr>
+                                <tr>
+                                    <td>١١</td>
+                                    <td>05:31</td>
+                                    <td>14:00</td>
+                                    <td>17:33</td>
+                                    <td>20:59</td>
+                                    <td>22:23</td>
+                                </tr>
+                                <tr>
+                                    <td>١٢</td>
+                                    <td>05:31</td>
+                                    <td>14:00</td>
+                                    <td>17:33</td>
+                                    <td>20:58</td>
+                                    <td>22:22</td>
+                                </tr>
+                                <tr>
+                                    <td>١٣</td>
+                                    <td>05:32</td>
+                                    <td>14:00</td>
+                                    <td>17:34</td>
+                                    <td>20:58</td>
+                                    <td>22:22</td>
+                                </tr>
+                                <tr>
+                                    <td>١٤</td>
+                                    <td>05:33</td>
+                                    <td>14:00</td>
+                                    <td>17:34</td>
+                                    <td>20:58</td>
+                                    <td>22:21</td>
+                                </tr>
+                                <tr>
+                                    <td>١٥</td>
+                                    <td>05:34</td>
+                                    <td>14:00</td>
+                                    <td>17:34</td>
+                                    <td>20:58</td>
+                                    <td>22:21</td>
+                                </tr>
+                                <tr>
+                                    <td>١٦</td>
+                                    <td>05:34</td>
+                                    <td>14:00</td>
+                                    <td>17:34</td>
+                                    <td>20:57</td>
+                                    <td>22:20</td>
+                                </tr>
+                                <tr>
+                                    <td>١٧</td>
+                                    <td>05:35</td>
+                                    <td>14:00</td>
+                                    <td>17:34</td>
+                                    <td>20:57</td>
+                                    <td>22:20</td>
+                                </tr>
+                                <tr>
+                                    <td>١٨</td>
+                                    <td>05:36</td>
+                                    <td>14:00</td>
+                                    <td>17:34</td>
+                                    <td>20:56</td>
+                                    <td>22:19</td>
+                                </tr>
+                                <tr>
+                                    <td>١٩</td>
+                                    <td>05:37</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:56</td>
+                                    <td>22:19</td>
+                                </tr>
+                                <tr>
+                                    <td>٢٠</td>
+                                    <td>05:37</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:56</td>
+                                    <td>22:18</td>
+                                </tr>
+                                <tr>
+                                    <td>٢١</td>
+                                    <td>05:38</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:55</td>
+                                    <td>22:17</td>
+                                </tr>
+                                <tr>
+                                    <td>٢٢</td>
+                                    <td>05:39</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:55</td>
+                                    <td>22:16</td>
+                                </tr>
+                                <tr>
+                                    <td>٢٣</td>
+                                    <td>05:40</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:54</td>
+                                    <td>22:16</td>
+                                </tr>
+                                <tr>
+                                    <td>٢٤</td>
+                                    <td>05:40</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:54</td>
+                                    <td>22:15</td>
+                                </tr>
+                                <tr>
+                                    <td>٢٥</td>
+                                    <td>05:41</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:53</td>
+                                    <td>22:14</td>
+                                </tr>
+                                <tr>
+                                    <td>٢٦</td>
+                                    <td>05:42</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:52</td>
+                                    <td>22:13</td>
+                                </tr>
+                                <tr>
+                                    <td>٢٧</td>
+                                    <td>05:43</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:52</td>
+                                    <td>22:13</td>
+                                </tr>
+                                <tr>
+                                    <td>٢٨</td>
+                                    <td>05:44</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:51</td>
+                                    <td>22:12</td>
+                                </tr>
+                                <tr>
+                                    <td>٢٩</td>
+                                    <td>05:45</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:51</td>
+                                    <td>22:11</td>
+                                </tr>
+                                <tr>
+                                    <td>٣٠</td>
+                                    <td>05:45</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:50</td>
+                                    <td>22:10</td>
+                                </tr>
+                                <tr>
+                                    <td>٣١</td>
+                                    <td>05:46</td>
+                                    <td>14:01</td>
+                                    <td>17:35</td>
+                                    <td>20:49</td>
+                                    <td>22:09</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p class="calendar-note">* قد تختلف الأوقات قليلاً. يتم تحديث التقويم شهرياً. يرجى مراجعة صفحتنا بانتظام للحصول على التحديثات.</p>
+                    
+                    <div class="download-section" style="text-align: center; margin-top: 2rem;">
+                        <button class="cta-button" onclick="downloadPrayerSchedule('ar')" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-download"></i>
+                            تحميل الجدول الشهري
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Live Stream Section -->
+            <section class="section">
+                <h2>البث المباشر</h2>
+                <p>انضموا إلينا افتراضياً للصلوات والفعاليات الخاصة من خلال بثنا المباشر.</p>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fab fa-youtube"></i>
+                        <h3>يوتيوب</h3>
+                        <p><a href="https://www.youtube.com/@centroislamicoplayablanca" target="_blank" rel="noopener">قناة يوتيوب</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-facebook"></i>
+                        <h3>فيسبوك</h3>
+                        <p><a href="https://www.facebook.com/share/1FjhqgVRez/" target="_blank" rel="noopener">فيسبوك لايف</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Objectives -->
+            <section class="section">
+                <h2>أهداف المسجد</h2>
+                <p>لنبني معًا إرثًا لأجيالنا القادمة</p>
+                <p>كرمكم يساعدنا في الحفاظ على خدماتنا وتوسيعها للمجتمع. جميع التبرعات تُستخدم لصيانة المسجد والبرامج التعليمية والمساعدة المجتمعية.</p>
+                
+                <h3>أهداف المسجد</h3>
+                <div class="objectives-list">
+                    <div class="objective-item">
+                        <i class="fas fa-compass"></i>
+                        <span>🧭 توجيه المجتمع روحياً: تقديم إرشاد ديني مستمر من خلال المحاضرات والخطب والمساعدة الروحية لتعزيز الإيمان والمبادئ الإسلامية في الحياة اليومية.</span>
+                    </div>
+                    <div class="objective-item">
+                        <i class="fas fa-child"></i>
+                        <span>🧒 تعزيز التعليم الإسلامي والثقافي: تقديم دروس في اللغة العربية والقرآن والقيم الإسلامية للأطفال والشباب والكبار.</span>
+                    </div>
+                    <div class="objective-item">
+                        <i class="fas fa-users"></i>
+                        <span>👨‍👩‍👧‍👦 تقوية الروابط المجتمعية: تنظيم أنشطة اجتماعية وثقافية ودينية تعزز الوحدة والدعم المتبادل بين أفراد المجتمع.</span>
+                    </div>
+                    <div class="objective-item">
+                        <i class="fas fa-user-friends"></i>
+                        <span>👩‍🦳 تلبية احتياجات جميع الفئات: تطوير برامج خاصة للنساء وكبار السن والعائلات، لضمان اندماجهم النشط والمحترم.</span>
+                    </div>
+                    <div class="objective-item">
+                        <i class="fas fa-mosque"></i>
+                        <span>🕋 صيانة وتحسين المرافق: ضمان مساحة نظيفة وآمنة ويسهل الوصول إليها، مع موارد مناسبة للصلاة والتعليم والتعايش.</span>
+                    </div>
+                    <div class="objective-item">
+                        <i class="fas fa-handshake"></i>
+                        <span>🤝 تشجيع الحوار والتعايش: تعزيز الاحترام والتسامح والتفاهم المتبادل مع البيئة الاجتماعية والثقافية المحيطة بنا.</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Donations -->
+            <section class="section donations">
+                <!-- En la sección de donaciones en árabe -->
+                <h2>تبرع</h2>
+                <p>كرمكم يساعدنا في الحفاظ على خدماتنا وتوسيعها للمجتمع. جميع التبرعات تُستخدم لصيانة المسجد والبرامج التعليمية والتواصل المجتمعي.</p>
+                
+                <div class="quran-verse">
+                    <p>مَثَلُ الَّذِينَ يُنفِقُونَ أَمْوَالَهُمْ فِي سَبِيلِ اللَّهِ كَمَثَلِ حَبَّةٍ أَنبَتَتْ سَبْعَ سَنَابِلَ فِي كُلِّ سُنبُلَةٍ مِّائَةُ حَبَّةٍ ۗ وَاللَّهُ يُضَاعِفُ لِمَن يَشَاءُ ۗ وَاللَّهُ وَاسِعٌ عَلِيمٌ</p>
+                    <p>"مثل الذين ينفقون أموالهم في سبيل الله كمثل حبة أنبتت سبع سنابل في كل سنبلة مائة حبة والله يضاعف لمن يشاء والله واسع عليم" (البقرة: 261)</p>
+                </div>
+                
+                <div class="bank-info">
+                    <h3>كيف يمكنك المساعدة؟ 🤝</h3>
+                    <p>يمكنك المساهمة بتبرعك من خلال التحويل المصرفي:</p>
+                    <div class="iban">ES3321006992440200128409</div>
+                    <p>كل مساهمة، مهما كانت صغيرة، تقربنا أكثر من تحقيق هذا الهدف النبيل. جزاكم الله خيراً على كرمكم.</p>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section class="section">
+                <h2>الاتصال</h2>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>الموقع</h3>
+                        <p>شارع ألمانيا، 90<br>35580 بلايا بلانكا، لانزاروتي</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>الهاتف</h3>
+                        <p><a href="tel:+34627095609">627 095 609</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>البريد الإلكتروني</h3>
+                        <p><a href="mailto:masjidalhudaalhuda7@gmail.com">masjidalhudaalhuda7@gmail.com</a></p>
+                    </div>
+                </div>
+                
+                <!-- الخريطة -->
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.8234567890123!2d-13.8234567!3d28.8567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDUxJzI0LjQiTiAxM8KwNDknMjQuNCJX!5e0!3m2!1sar!2ses!4v1234567890123!5m2!1sar!2ses&q=C.+Alemania+90,+35580+Playa+Blanca,+Lanzarote" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="موقع مسجد الهدى">
+                    </iframe>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div id="spanish-footer">
+                <h3>Mezquita Al-Huda - Playa Blanca</h3>
+                <p>MEZQUITA ALHUDA</p>
+            </div>
+            <div id="arabic-footer" class="hidden" dir="rtl">
+                <h3>مسجد الهدى - بلايا بلانكا</h3>
+                <p>مسجد الهدى</p>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1FjhqgVRez/" target="_blank" rel="noopener" title="Visit our Facebook page">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/@centroislamicoplayablanca" target="_blank" rel="noopener" title="Visit our YouTube channel">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://wa.me/34627095609" target="_blank" rel="noopener" title="Contact us on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:masjidalhudaalhuda7@gmail.com" title="Send email to Masjid Al-Huda">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            
+            <div id="spanish-footer-text">
+                <p>&copy; 2024 Mezquita Al-Huda. Todos los derechos reservados.</p>
+                <p>El Profeta Muhammad ﷺ dijo: 'Quien construye una mezquita para Allah, Allah construirá para él algo similar en el Paraíso.' (Sahih Bukhari)</p>
+            </div>
+            <div id="arabic-footer-text" class="hidden" dir="rtl">
+                <p>&copy; 2024 مسجد الهدى. جميع الحقوق محفوظة.</p>
+                <p>قال النبي محمد ﷺ: 'من بنى مسجداً لله بنى الله له بيتاً في الجنة.' (صحيح البخاري)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleLanguage() {
+            const spanishContent = document.getElementById('spanish-content');
+            const arabicContent = document.getElementById('arabic-content');
+            const spanishFooter = document.getElementById('spanish-footer');
+            const arabicFooter = document.getElementById('arabic-footer');
+            const spanishFooterText = document.getElementById('spanish-footer-text');
+            const arabicFooterText = document.getElementById('arabic-footer-text');
+            const toggleButtons = document.querySelectorAll('.language-toggle');
+            
+            if (spanishContent.classList.contains('hidden')) {
+                spanishContent.classList.remove('hidden');
+                arabicContent.classList.add('hidden');
+                spanishFooter.classList.remove('hidden');
+                arabicFooter.classList.add('hidden');
+                spanishFooterText.classList.remove('hidden');
+                arabicFooterText.classList.add('hidden');
+                toggleButtons.forEach(btn => btn.textContent = 'العربية');
+                document.documentElement.setAttribute('dir', 'ltr');
+                document.documentElement.setAttribute('lang', 'es');
+            } else {
+                spanishContent.classList.add('hidden');
+                arabicContent.classList.remove('hidden');
+                spanishFooter.classList.add('hidden');
+                arabicFooter.classList.remove('hidden');
+                spanishFooterText.classList.add('hidden');
+                arabicFooterText.classList.remove('hidden');
+                toggleButtons.forEach(btn => btn.textContent = 'Español');
+                document.documentElement.setAttribute('dir', 'rtl');
+                document.documentElement.setAttribute('lang', 'ar');
+            }
+        }
+
+        function toggleMobileMenu() {
+            const navMenus = document.querySelectorAll('.nav-menu');
+            navMenus.forEach(menu => {
+                menu.classList.toggle('active');
+            });
+        }
+
+        // Función para descargar el horario de salat como PDF
+        function downloadPrayerSchedule(language) {
+            try {
+                // Get prayer table data
+                const table = language === 'es' ? 
+                    document.querySelector('#spanish-content .prayer-table') :
+                    document.querySelector('#arabic-content .prayer-table');
+                
+                if (!table) {
+                    alert('Error: Prayer table not found');
+                    return;
+                }
+                
+                // Prayer times data for July 2025
+                const prayerData = [
+                    ['1', '05:25', '13:58', '17:31', '21:00', '22:25'],
+                    ['2', '05:25', '13:58', '17:31', '21:00', '22:25'],
+                    ['3', '05:26', '13:59', '17:32', '21:00', '22:25'],
+                    ['4', '05:26', '13:59', '17:32', '21:00', '22:25'],
+                    ['5', '05:27', '13:59', '17:32', '21:00', '22:25'],
+                    ['6', '05:28', '13:59', '17:32', '21:00', '22:24'],
+                    ['7', '05:28', '13:59', '17:32', '20:59', '22:24'],
+                    ['8', '05:29', '13:59', '17:33', '20:59', '22:24'],
+                    ['9', '05:29', '14:00', '17:33', '20:59', '22:23'],
+                    ['10', '05:30', '14:00', '17:33', '20:59', '22:23'],
+                    ['11', '05:31', '14:00', '17:33', '20:59', '22:23'],
+                    ['12', '05:31', '14:00', '17:33', '20:58', '22:22'],
+                    ['13', '05:32', '14:00', '17:34', '20:58', '22:22'],
+                    ['14', '05:33', '14:00', '17:34', '20:58', '22:21'],
+                    ['15', '05:34', '14:00', '17:34', '20:58', '22:21'],
+                    ['16', '05:34', '14:00', '17:34', '20:57', '22:20'],
+                    ['17', '05:35', '14:00', '17:34', '20:57', '22:20'],
+                    ['18', '05:36', '14:00', '17:34', '20:56', '22:19'],
+                    ['19', '05:37', '14:01', '17:35', '20:56', '22:19'],
+                    ['20', '05:37', '14:01', '17:35', '20:56', '22:18'],
+                    ['21', '05:38', '14:01', '17:35', '20:55', '22:17'],
+                    ['22', '05:39', '14:01', '17:35', '20:55', '22:16'],
+                    ['23', '05:40', '14:01', '17:35', '20:54', '22:16'],
+                    ['24', '05:40', '14:01', '17:35', '20:54', '22:15'],
+                    ['25', '05:41', '14:01', '17:35', '20:53', '22:14'],
+                    ['26', '05:42', '14:01', '17:35', '20:52', '22:13'],
+                    ['27', '05:43', '14:01', '17:35', '20:52', '22:13'],
+                    ['28', '05:44', '14:01', '17:35', '20:51', '22:12'],
+                    ['29', '05:45', '14:01', '17:35', '20:51', '22:11'],
+                    ['30', '05:45', '14:01', '17:35', '20:50', '22:10'],
+                    ['31', '05:46', '14:01', '17:35', '20:49', '22:09']
+                ];
+
+                let csvContent = '';
+                let filename = '';
+
+                if (language === 'es') {
+                    csvContent = 'Día,Fajr,Dhuhr,Asr,Maghrib,Isha\n';
+                    filename = 'horarios_oracion_julio_2025.csv';
+                } else {
+                    csvContent = 'اليوم,الفجر,الظهر,العصر,المغرب,العشاء\n';
+                    filename = 'اوقات_الصلاة_يوليو_2025.csv';
+                }
+
+                prayerData.forEach(row => {
+                    if (language === 'ar') {
+                        // Convert numbers to Arabic numerals for Arabic version
+                        const arabicNumerals = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
+                        const arabicDay = row[0].split('').map(digit => arabicNumerals[parseInt(digit)]).join('');
+                        csvContent += arabicDay + ',' + row.slice(1).join(',') + '\n';
+                    } else {
+                        csvContent += row.join(',') + '\n';
+                    }
+                });
+
+                // Create and download the file
+                const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+                const link = document.createElement('a');
+                const url = URL.createObjectURL(blob);
+                link.setAttribute('href', url);
+                link.setAttribute('download', filename);
+                link.style.visibility = 'hidden';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            } catch (error) {
+                console.error('Download error:', error);
+                alert(language === 'es' ? 
+                    'Error al generar el archivo. Por favor, inténtelo de nuevo.' :
+                    'خطأ في إنشاء الملف. يرجى المحاولة مرة أخرى.');
+            }
+        }
+
+        // Prayer Times Countdown Functionality
+        function initPrayerCountdown() {
+            // Horarios de oración actualizados para Playa Blanca, Lanzarote
+            const prayerTimes = {
+                fajr: { hour: 5, minute: 27 },
+                dhuhr: { hour: 13, minute: 59 },
+                asr: { hour: 17, minute: 32 },
+                maghrib: { hour: 21, minute: 0 },
+                isha: { hour: 22, minute: 25 }
+            };
+            
+            const prayerNamesEs = {
+                'fajr': 'Fajr',
+                'dhuhr': 'Dhuhr', 
+                'asr': 'Asr',
+                'maghrib': 'Maghrib',
+                'isha': 'Isha'
+            };
+            
+            const prayerNamesAr = {
+                'fajr': 'الفجر',
+                'dhuhr': 'الظهر', 
+                'asr': 'العصر',
+                'maghrib': 'المغرب',
+                'isha': 'العشاء'
+            };
+            
+            const arabicNumerals = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
+            
+            function convertToArabicNumerals(num) {
+                return num.toString().split('').map(digit => arabicNumerals[parseInt(digit)]).join('');
+            }
+            
+            function getCanaryTime() {
+                // Obtener la hora actual en zona horaria de Canarias
+                return new Date().toLocaleString("en-US", {timeZone: "Atlantic/Canary"});
+            }
+            
+            function getNextPrayer() {
+                // Usar hora de Canarias
+                const canaryTimeString = getCanaryTime();
+                const now = new Date(canaryTimeString);
+                const currentTime = now.getHours() * 60 + now.getMinutes();
+                
+                for (const [prayer, timeObj] of Object.entries(prayerTimes)) {
+                    const prayerTime = timeObj.hour * 60 + timeObj.minute;
+                    
+                    if (currentTime < prayerTime) {
+                        return { prayer, timeObj };
+                    }
+                }
+                
+                // If no prayer left today, return Fajr for tomorrow
+                return { prayer: 'fajr', timeObj: prayerTimes.fajr, tomorrow: true };
+            }
+            
+            function updateCountdown() {
+                const nextPrayer = getNextPrayer();
+                // Usar hora de Canarias
+                const canaryTimeString = getCanaryTime();
+                const now = new Date(canaryTimeString);
+                
+                // Create target time in Canary timezone
+                const hours = nextPrayer.timeObj.hour;
+                const minutes = nextPrayer.timeObj.minute;
+                const target = new Date(canaryTimeString);
+                target.setHours(hours, minutes, 0, 0);
+                
+                // If it's tomorrow's Fajr, add a day
+                if (nextPrayer.tomorrow) {
+                    target.setDate(target.getDate() + 1);
+                }
+                
+                const timeDiff = target - now;
+                
+                if (timeDiff > 0) {
+                    const hoursLeft = Math.floor(timeDiff / (1000 * 60 * 60));
+                    const minutesLeft = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+                    const secondsLeft = Math.floor((timeDiff % (1000 * 60)) / 1000);
+                    
+                    // Update Spanish version
+                    document.getElementById('next-prayer-name-es').textContent = prayerNamesEs[nextPrayer.prayer];
+                    document.getElementById('hours-es').textContent = hoursLeft.toString().padStart(2, '0');
+                    document.getElementById('minutes-es').textContent = minutesLeft.toString().padStart(2, '0');
+                    document.getElementById('seconds-es').textContent = secondsLeft.toString().padStart(2, '0');
+                    
+                    // Update Arabic version
+                    document.getElementById('next-prayer-name-ar').textContent = prayerNamesAr[nextPrayer.prayer];
+                    document.getElementById('hours-ar').textContent = convertToArabicNumerals(hoursLeft.toString().padStart(2, '0'));
+                    document.getElementById('minutes-ar').textContent = convertToArabicNumerals(minutesLeft.toString().padStart(2, '0'));
+                    document.getElementById('seconds-ar').textContent = convertToArabicNumerals(secondsLeft.toString().padStart(2, '0'));
+                } else {
+                    // Prayer time has arrived
+                    document.getElementById('next-prayer-name-es').textContent = '¡Es hora de ' + prayerNamesEs[nextPrayer.prayer] + '!';
+                    document.getElementById('next-prayer-name-ar').textContent = 'حان وقت ' + prayerNamesAr[nextPrayer.prayer] + '!';
+                    
+                    // Reset countdown
+                    ['es', 'ar'].forEach(lang => {
+                        document.getElementById('hours-' + lang).textContent = lang === 'ar' ? '٠٠' : '00';
+                        document.getElementById('minutes-' + lang).textContent = lang === 'ar' ? '٠٠' : '00';
+                        document.getElementById('seconds-' + lang).textContent = lang === 'ar' ? '٠٠' : '00';
+                    });
+                }
+            }
+            
+            // Update countdown every second
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        }
+        
+        // Initialize countdown when page loads
+        document.addEventListener('DOMContentLoaded', initPrayerCountdown);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Cerrar menú móvil después de hacer clic
+                const navMenus = document.querySelectorAll('.nav-menu');
+                navMenus.forEach(menu => {
+                    menu.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
